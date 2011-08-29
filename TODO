@@ -1,0 +1,15 @@
+
+ * Seperate out newsletter-specific code
+ * Unit tests
+ * Record bounce error message
+ * Mark member as 'bounced'
+ * Provide reports on which members have bounced
+
+Ideas
+
+ * Reply-to handling - store email response in db?
+
+Options:
+
+ * Instantly pipe email to a script (current solution)
+ * Periodiocally read bounced emails with IMAP/POP - see http://php.net/manual/en/refs.remote.mail.php
