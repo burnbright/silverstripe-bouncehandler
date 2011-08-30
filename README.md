@@ -16,17 +16,7 @@ Emails sent out must be marked with the appropriate header so that bounces come 
  	- This is then set by Mailer.php when sending emails
  * Reading emails
  	- Pipe incoming emails addressed to 'bounceaddress@mysite.com' to | silverstripe/sapphire/sake /BounceEmailTask
- 	
- 
-## External Resources:
 
- * http://en.wikipedia.org/wiki/Bounce_address
- * http://en.wikipedia.org/wiki/Non_delivery_report
- 
-Other solutions:
- 
- * http://www.umailcampaign.com/Article/16.aspx
- * http://www.boogietools.com/Products/Linux/
 
  ## History
 

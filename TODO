@@ -1,15 +1,48 @@
+TODO:
 
+ * Read in headers to nice format...eg php array
  * Seperate out newsletter-specific code
  * Unit tests
+ 	- run different email responses through handler
+ * Distinguish between hard and soft bounces
  * Record bounce error message
  * Mark member as 'bounced'
  * Provide reports on which members have bounced
+
+Document:
+
+ * What functionality exists in SS 2.4.5 , how it might change.
+ * What newsletter functionality exists where
+
+ * SilverStripe headers
 
 Ideas
 
  * Reply-to handling - store email response in db?
 
-Options:
+Handling options:
 
  * Instantly pipe email to a script (current solution)
  * Periodiocally read bounced emails with IMAP/POP - see http://php.net/manual/en/refs.remote.mail.php
+ * VERP? - http://en.wikipedia.org/wiki/Variable_envelope_return_path
+ * External email list/campaign tools?
+ 
+Research / helpful articles:
+
+http://kb.mailchimp.com/article/why-did-my-email-bounce-smtp-replies - understanding bounces
+http://lamsonproject.org/blog/2009-07-09.html - lamason's bounce detection algorithm. Has some useful bounce matcher regexes
+http://blogs.boomerang.com/blog/2010/03/30/what-is-a-soft-vs-hard-bounce/ - what is hard vs soft
+http://stackoverflow.com/questions/1235534/what-is-the-behavior-difference-between-return-path-reply-to-and-from
+
+Wikipedia:
+http://en.wikipedia.org/wiki/Bounce_message
+http://en.wikipedia.org/wiki/Bounce_address
+http://en.wikipedia.org/wiki/Non_delivery_report
+
+
+Related rfcs:
+http://www.faqs.org/rfcs/rfc3464.html - An Extensible Message Format for Delivery Status Noti
+http://www.faqs.org/rfcs/rfc1893.html - Enhanced Mail System Status Codes
+
+http://www.umailcampaign.com/Article/16.aspx - explanation of catch all solution
+ http://www.boogietools.com/Products/Linux/ - paid solution
